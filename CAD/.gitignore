@@ -1,0 +1,4 @@
+# FreeCAD Backup files
+*.FCStd1
+# Exported STLs
+*.stl
