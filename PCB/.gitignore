@@ -1,0 +1,7 @@
+# Exclude generated gerbers
+Gerbers
+# Any generated files in this directory
+*.zip
+*.pdf
+# KiCAD Backups
+*-backups/
