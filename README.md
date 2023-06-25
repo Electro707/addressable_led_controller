@@ -3,6 +3,8 @@
 
 This is the repository for my LED strip controller. This LED controller is capable of controlling any addressable LED strip (1 or two data wires).
 
+![Image of Controller](docs/controller_pic.jpg)
+
 ## Firmware
 
 This controller uses the [WLED firmware](https://github.com/Aircoookie/WLED). Instructions to upload the firmware unto the board can be found on their webpage.
