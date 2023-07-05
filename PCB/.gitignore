@@ -5,3 +5,4 @@ Gerbers
 *.pdf
 # KiCAD Backups
 *-backups/
+*.bak
