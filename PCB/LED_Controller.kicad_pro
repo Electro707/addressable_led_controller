@@ -505,6 +505,14 @@
     [
       "c2ef8e0f-ce81-4c82-a0ca-f054c5c3745d",
       ""
+    ],
+    [
+      "6d0223d2-791f-4988-ac9a-278fccfb0cf9",
+      "Ethernet and Connector"
+    ],
+    [
+      "1b44e26a-d4f8-4fcd-b6ed-54ad79d16191",
+      "POE and External Power"
     ]
   ],
   "text_variables": {}

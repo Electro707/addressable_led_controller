@@ -1,0 +1,4 @@
+# This ignore is for the step files by manufacturers, which I cannot include due to licensing crap
+# see README for details
+*.step
+*.stp
