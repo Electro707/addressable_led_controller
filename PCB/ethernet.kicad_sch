@@ -4,6 +4,14 @@
 
   (paper "A4")
 
+  (title_block
+    (title "Addressable LED Controller")
+    (date "2023-07-30")
+    (rev "3.0")
+    (comment 1 "Jamal Bouajjaj")
+    (comment 2 "Ethernet Physical")
+  )
+
   (lib_symbols
     (symbol "Device:C" (pin_numbers hide) (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
       (property "Reference" "C" (at 0.635 2.54 0)

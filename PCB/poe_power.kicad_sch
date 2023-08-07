@@ -4,6 +4,14 @@
 
   (paper "A4")
 
+  (title_block
+    (title "Addressable LED Controller")
+    (date "2023-07-30")
+    (rev "3.0")
+    (comment 1 "Jamal Bouajjaj")
+    (comment 2 "POE")
+  )
+
   (lib_symbols
     (symbol "Connector:Barrel_Jack" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
       (property "Reference" "J" (at 0 5.334 0)
