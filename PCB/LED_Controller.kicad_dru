@@ -1,9 +1,13 @@
 (version 1)
-(rule U2CLEAR
+(rule U4CLEAR
 	(constraint clearance (min 6mil))
-	(condition "A.insideCourtyard('U2')")
+	(condition "(A.Type == 'Track' || A.Type == 'Pad') && A.NetClass == 'HI_V' && A.intersectsCourtyard('U3')")
+)
+(rule U2CLEAR
+	(constraint clearance (min 8mil))
+	(condition "A.Type == 'Pad' && A.insideCourtyard('U2')")
 )
 (rule U4CLEAR
 	(constraint clearance (min 6mil))
-	(condition "A.insideCourtyard('U4')")
+	(condition "A.Type == 'Pad' && A.insideCourtyard('U4')")
 )

@@ -1959,8 +1959,6 @@
     (uuid f4569228-ffd1-41d1-8c3e-ef27ef6c1a1d)
   )
 
-  (no_connect (at 96.52 130.81) (uuid 287b4e47-ecbd-435c-8082-866bb6ded080))
-
   (wire (pts (xy 198.12 100.33) (xy 195.58 100.33))
     (stroke (width 0) (type default))
     (uuid 014b3862-843a-409d-9949-5cb68b4f384d)
@@ -3132,6 +3130,35 @@
     )
   )
 
+  (symbol (lib_id "Device:R") (at 100.33 130.81 90) (mirror x) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 8c8977cd-01a3-476e-9882-c241c2b5a248)
+    (property "Reference" "R11" (at 96.52 131.445 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "0" (at 100.33 130.81 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 100.33 129.032 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 100.33 130.81 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid cb5f06d9-5279-46b6-8be7-c34d02f9105a))
+    (pin "2" (uuid 97c5db8d-af49-43e4-9d83-b0de43033dfc))
+    (instances
+      (project "LED_Controller"
+        (path "/c2ef8e0f-ce81-4c82-a0ca-f054c5c3745d"
+          (reference "R11") (unit 1)
+        )
+        (path "/c2ef8e0f-ce81-4c82-a0ca-f054c5c3745d/6d0223d2-791f-4988-ac9a-278fccfb0cf9"
+          (reference "R30") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "Device:R") (at 109.22 88.9 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a216320a-4073-497e-bde0-d9c46031cb5f)
@@ -3415,6 +3442,34 @@
         )
         (path "/c2ef8e0f-ce81-4c82-a0ca-f054c5c3745d/6d0223d2-791f-4988-ac9a-278fccfb0cf9"
           (reference "R12") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 104.14 130.81 0) (mirror y) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid f24d6777-21cb-4447-96b7-67a476364c40)
+    (property "Reference" "#PWR015" (at 104.14 137.16 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 104.14 134.62 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 104.14 130.81 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 104.14 130.81 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 2e39d3f4-32a9-4768-8df6-54162a52a8ff))
+    (instances
+      (project "LED_Controller"
+        (path "/c2ef8e0f-ce81-4c82-a0ca-f054c5c3745d"
+          (reference "#PWR015") (unit 1)
+        )
+        (path "/c2ef8e0f-ce81-4c82-a0ca-f054c5c3745d/6d0223d2-791f-4988-ac9a-278fccfb0cf9"
+          (reference "#PWR038") (unit 1)
         )
       )
     )

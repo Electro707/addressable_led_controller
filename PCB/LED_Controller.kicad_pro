@@ -34,9 +34,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.762,
-          "height": 1.524,
-          "width": 1.524
+          "drill": 0.381,
+          "height": 0.635,
+          "width": 0.635
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -56,7 +56,27 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "lib_footprint_issues|117856000|122936000|a9473b48-c827-4505-b78e-fb8d916be3da|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_issues|121412000|130302000|7b07b2f1-4714-4e9f-85f7-5055a7964ecb|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_issues|123899239|147001208|a7711e5e-4c71-4705-888e-05d61fa610b7|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_issues|126238000|130302000|738f94af-49a8-4dd3-8482-195a94df59a8|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_issues|135001000|152146000|fdb2d4de-2940-43dc-b886-5fe5dae89d06|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_issues|135001000|153670000|566ef58a-c1ae-4127-84b4-180afba4f97d|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_issues|135001000|155194000|17c00ed9-d6d3-4d5c-9f2b-32aef3512840|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_issues|135001000|156718000|5d132036-eb25-487f-bdf7-5582eb00aafd|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_issues|135100761|164501208|d1ea061a-cf6c-45da-ac85-507e267a0cec|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_issues|58399239|174501208|cfb5ede0-9f4b-4eef-8de4-8bb97c211321|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_issues|59600761|174501208|a3f747fd-8840-4221-8cbd-cc85ea592575|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_mismatch|103621625|160152363|2e1c3e81-022b-4866-94de-415f7545a419|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_mismatch|73386625|151269327|5dc2e47c-666f-4787-9454-3b9e8482a046|00000000-0000-0000-0000-000000000000",
+        "silk_edge_clearance|107650000|118000000|b229f7e0-e085-4e4a-ac08-e53e507f874f|bae72cfd-7eb2-4128-aa94-2665a2488ee4",
+        "silk_edge_clearance|116850000|118000000|b229f7e0-e085-4e4a-ac08-e53e507f874f|3815cc2d-9d76-41bc-993d-c9eb9181a4a7",
+        "silk_edge_clearance|129385000|118045000|b229f7e0-e085-4e4a-ac08-e53e507f874f|25e8bce2-adc2-4656-bea2-127f172ae5ca",
+        "silk_edge_clearance|129385000|118045000|b229f7e0-e085-4e4a-ac08-e53e507f874f|b03aefd9-f1c6-42bc-ac96-4ed146eb308c",
+        "silk_edge_clearance|66180000|178500000|26cf5382-a3a9-400c-90ff-0f93b2c086c6|86186f9d-37b8-45cb-8a2e-4d648488ac0d",
+        "silk_over_copper|82280000|169753755|86186f9d-37b8-45cb-8a2e-4d648488ac0d|00000000-0000-0000-0000-000000000000"
+      ],
       "meta": {
         "version": 2
       },
@@ -116,7 +136,7 @@
         "max_error": 0.005,
         "min_clearance": 0.2032,
         "min_connection": 0.0,
-        "min_copper_edge_clearance": 0.254,
+        "min_copper_edge_clearance": 0.508,
         "min_hole_clearance": 0.381,
         "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.19999999999999998,
@@ -435,13 +455,37 @@
         "via_diameter": 0.8128,
         "via_drill": 0.3048,
         "wire_width": 6
+      },
+      {
+        "bus_width": 6,
+        "clearance": 0.381,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "HI_V",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2032,
+        "via_diameter": 0.8128,
+        "via_drill": 0.3048,
+        "wire_width": 6
       }
     ],
     "meta": {
       "version": 3
     },
     "net_colors": null,
-    "netclass_assignments": null,
+    "netclass_assignments": {
+      "/Ethernet and Connector/ETH_V1+": "HI_V",
+      "/Ethernet and Connector/ETH_V1-": "HI_V",
+      "/Ethernet and Connector/ETH_V2+": "HI_V",
+      "/Ethernet and Connector/ETH_V2-": "HI_V",
+      "Net-(D2-+)": "HI_V",
+      "Net-(D2--)": "HI_V"
+    },
     "netclass_patterns": []
   },
   "pcbnew": {
