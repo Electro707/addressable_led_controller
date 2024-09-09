@@ -37,3 +37,8 @@ At 2.45Gz, impedance was 17.5-35.8jΩ. We get 2.3194nH for L, 3.898pF for Cs, an
 ## Rev 3 Branch-Off
 
 Rev 3 of this project was a fully-featured POE version of this controller. I since has made this revision, which is closer to the original small design, so I decided to branch Rev3 off to it's own repo: [Electro707/addressable_led_controller_poe](https://github.com/Electro707/addressable_led_controller_poe)
+
+
+## Rev 4 Design Reasonings
+
+Over at [DesignConsiderations.md](DesignConsiderations.md), I wrote some design reasonings as to why some things are the way they are designed for Rev 4 of the board. Feel free to have a look, keep in mind they are more internal notes if anything.
